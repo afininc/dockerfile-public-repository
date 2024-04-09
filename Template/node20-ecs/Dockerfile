@@ -2,6 +2,8 @@ FROM public.ecr.aws/afininc/node20-alpine-base:latest
 WORKDIR /usr/src/app
 ARG ENV
 
+ENV TZ=Asia/Seoul
+
 COPY . .
 RUN yarn set version berry
 
